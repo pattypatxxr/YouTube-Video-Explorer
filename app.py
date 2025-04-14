@@ -100,18 +100,19 @@ if st.button("Search") and api_key and query:
         ## Lineplot: Average and Median Views by Publish Hour
         st.subheader("⏰ Views by Publish Hour")
         hour_labels = [f"{h % 12 or 12}{'AM' if h < 12 else 'PM'}" for h in range(24)]
-        hourly_views = df.groupby('publish_hour')['views'].agg(['mean', 'median']).reset_index()
+        hourly_views = df.groupby('publish_hour')['views'].agg(['mean']).reset_index()
 
         fig3, ax3 = plt.subplots(figsize=(10, 5))
-        sns.lineplot(x='publish_hour', y='mean', data=hourly_views, label='Mean', ax=ax3)
-        sns.lineplot(x='publish_hour', y='median', data=hourly_views, label='Median', ax=ax3)
-        ax3.set_title("Average and Median Views by Publish Hour")
+        sns.lineplot(x='publish_hour', y='mean', data=hourly_views, label='Mean', ax=ax3, marker='o')
+
+        ax3.set_title("Average Views by Publish Hour")
         ax3.set_xlabel("Publish Hour")
         ax3.set_ylabel("Views")
         ax3.set_xticks(range(24))
         ax3.set_xticklabels(hour_labels, rotation=45)
         ax3.legend()
         st.pyplot(fig3)
+
 
         # 🔥 Correlation Heatmap
         st.subheader("📊 Correlation Heatmap of Engagement Metrics")
