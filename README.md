@@ -24,12 +24,6 @@ To identify what makes certain YouTube videos more popular than others by analyz
 
 ## 🚀 How to Run the App
 
-1. Clone this repository
+1. Enter this link [ https://youtube-video-explorer-3pjbm7qyfpjwqvovcsvmav.streamlit.app/ ]
 
-2. Install dependencies
-> pip install -r requirements.txt
-
-3. Run the Streamlit app
-> streamlit run app.py
-
-4. Enter your YouTube Data API key when prompted in the dashboard.
+2. Enter your YouTube Data API key when prompted in the dashboard.
