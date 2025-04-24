@@ -13,9 +13,9 @@ To identify what makes certain YouTube videos more popular than others by analyz
 
 ## 🔍 Key Features
 
-- ✅ Real-time data fetching based on keyword search (e.g., “gaming”, “education”)
-- ✅ Interactive Streamlit dashboard
-- ✅ Visualizations:
+- Real-time data fetching based on keyword search (e.g., “gaming”, “education”)
+- Interactive Streamlit dashboard
+- Visualizations:
   - Scatter plot: Likes vs. Views
   - Box plot: Views by Publish Day
   - Line chart: Views by Publish Hour
